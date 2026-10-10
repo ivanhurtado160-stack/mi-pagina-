@@ -1,8 +1,8 @@
-<¡DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1-0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>papu pagina</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
@@ -15,7 +15,7 @@
     <main>
         <h2>pe causa</h2>
         
-        <video wodth="100%" controls autoplay muted loop>
+        style="width:100%:max width:800px:" controls muted loop>
             <source src="peru.mp4" type="video/mp4">
             tu navegador no soporta el video pinche puta.
             </video>
@@ -24,7 +24,7 @@
     <footer>
         <p>@ 2026 - pagina de ivan hurtado jaimes</p>
     </footer>
-    <button id="btn-musica" style="position: fixed ; bottom: 20px; right: 20px; z-index : 1000; padding: 10px 15px; border-radius: 50px; border: none; background: #333; color: white; cursor: pointer";
+    <button id="btn-musica" style="position: fixed ; bottom: 20px; right: 20px; z-index : 1000; padding: 10px 15px; border-radius: 50px; border: none; background: #333; color: white; cursor: pointer;">
        🎵 activar musica
     </button>
     
@@ -38,15 +38,18 @@
         let reproduciendo = false;
 
         btn.addEventListener('click', () => {
-            if (¡reproduciendo) {
-                musica.play();
-                btn.textContent = '🔇 silenciar';
+            if (!reproduciendo) {
+                try}
+                await musica.play();
                 reproduciendo =true;
+                btn.textContent ='🎵 silenciar musica';
+        }catch (error){ 
+          btn.textContent ='🎵 no se pudo reproducir';
             } else {
                 musica.pause();
-                btn.textContent ='🎵 Activar musica';
-                reproduciendo = false;
-            }
+                eproduciendo=false;
+                btn.textContent ='🎵 Activar musica
+           }
         });
     </script>
 </body>
