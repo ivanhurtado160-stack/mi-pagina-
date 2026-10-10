@@ -24,9 +24,10 @@
     <footer>
         <p>@ 2026 - pagina de ivan hurtado jaimes</p>
     </footer>
-    <button id="btn-musica" style="position": fixed ; bottom: 20px; right: 20px; z-index : 1000; padding: 10px 15px; border-radius: 50px; border: none; background: #333; color: white; cursor: pointer";
-        activar musica
+    <button id="btn-musica" style="position: fixed ; bottom: 20px; right: 20px; z-index : 1000; padding: 10px 15px; border-radius: 50px; border: none; background: #333; color: white; cursor: pointer";
+       🎵 activar musica
     </button>
+    
     <audio id="musica-fondo" loop> 
         <source src="perul.mp3" type="audio/mpeg">
     </audio>
@@ -37,13 +38,13 @@
         let reproduciendo = false;
 
         btn.addEventListener('click', () => {
-            if (reproduciendo) {
+            if (¡reproduciendo) {
                 musica.play();
-                btn.textcontent = 'sinlenciar';
+                btn.textContent = '🔇 silenciar';
                 reproduciendo =true;
             } else {
                 musica.pause();
-                btn.textContent ='Activar musica';
+                btn.textContent ='🎵 Activar musica';
                 reproduciendo = false;
             }
         });
